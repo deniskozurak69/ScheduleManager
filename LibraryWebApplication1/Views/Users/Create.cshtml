@@ -1,0 +1,122 @@
+﻿@model LibraryWebApplication1.Models.User
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create new user</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Username" class="control-label">Username:</label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">Password:</label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Latitude" class="control-label">Latitude:</label>
+                <input asp-for="Latitude" class="form-control" type="number" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Longtitude" class="control-label">Longtitude:</label>
+                <input asp-for="Longtitude" class="form-control" type="number" />
+                <span asp-validation-for="Longtitude" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProfilePhoto" class="control-label">Profile Photo:</label>
+                <input type="file" name="photoFile" class="form-control-file" accept=".jpg,.jpeg,.png" />
+                <input type="hidden" asp-for="ProfilePhoto" id="profilePhotoHidden" />
+                <span asp-validation-for="ProfilePhoto" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="compressImage" value="true" /> Compress Image
+                </label>
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script>
+        function loadGoogleDriveAPI() {
+            gapi.load('client:auth2', initClient);
+        }
+
+        function initClient() {
+            gapi.client.init({
+                apiKey: 'AIzaSyCI0yenYffLlLcLoZdK4QVgWlj0zfuy7d0',
+                clientId: '755861786405-kadabfmsn5jnsa843sluvnob89jlr7d4.apps.googleusercontent.com',
+                discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'],
+                scope: 'https://www.googleapis.com/auth/drive.readonly'
+            }).then(function () {
+                document.getElementById('googleDriveButton').onclick = handleAuthClick;
+            });
+        }
+
+        function handleAuthClick(event) {
+            gapi.auth2.getAuthInstance().signIn().then(function () {
+                pickFileFromGoogleDrive();
+            });
+        }
+
+        function pickFileFromGoogleDrive() {
+            gapi.client.drive.files.list({
+                'pageSize': 10,
+                'fields': "nextPageToken, files(id, name, mimeType)"
+            }).then(function (response) {
+                const files = response.result.files;
+                if (files && files.length > 0) {
+                    const file = files[0];
+                    downloadFile(file.id);
+                }
+            });
+        }
+
+        function downloadFile(fileId) {
+            gapi.client.drive.files.get({
+                fileId: fileId,
+                alt: 'media'
+            }).then(function (response) {
+                const fileBlob = new Blob([response.body]);
+                const formData = new FormData();
+                formData.append('photoFile', fileBlob, 'google-drive-file.jpg');
+                fetch('@Url.Action("UploadGoogleDriveFile", "Users")', {
+                    method: 'POST',
+                    body: formData
+                }).then(response => response.json())
+                    .then(data => {
+                        document.getElementById('profilePhotoHidden').value = data.filePath;
+                    });
+            });
+        }
+
+        gapi.load('client:auth2', loadGoogleDriveAPI);
+    </script>
+}

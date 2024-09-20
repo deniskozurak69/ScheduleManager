@@ -1,0 +1,243 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using LibraryWebApplication1.Models
+@using LibraryWebApplication1.Controllers
+@using System.IO
+
+@model IEnumerable<LibraryWebApplication1.Models.Article>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Manage Articles</h1>
+
+<p>
+    <a asp-controller="Articles" asp-action="Create">Create new article</a>
+</p>
+
+<div class="search-container">
+    <label for="articlename-autocomplete">Search Article:</label>
+    <input type="text" id="articlename-autocomplete" />
+    <button id="go-to-details" class="btn btn-primary">View</button>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.ArticleId)</th>
+            <th>@Html.DisplayNameFor(model => model.ArticleName)</th>
+            <th>@Html.DisplayNameFor(model => model.Author.Username)</th>
+            <th>@Html.DisplayNameFor(model => model.PublishDate)</th>
+            <th>@Html.DisplayNameFor(model => model.CategoryNavigation.Name)</th>
+            <th>Text File</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.ArticleId)</td>
+                <td>@Html.DisplayFor(modelItem => item.ArticleName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Author.Username)</td>
+                <td>@Html.DisplayFor(modelItem => item.PublishDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.CategoryNavigation.Name)</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.Text))
+                    {
+                        string fileName = System.IO.Path.GetFileName(item.Text);
+                        <div>
+                            <button class="download-file-btn" data-path="@Url.Content(item.Text)">Download to PC</button>
+                            <button class="upload-to-drive-btn" data-path="@Url.Content(item.Text)">Upload to Google Drive</button>
+                        </div>
+                    }
+                    else
+                    {
+                        <span>No file uploaded</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ArticleId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ArticleId">Delete</a> |
+                    <a asp-action="Details" asp-route-id="@item.ArticleId">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    .search-container 
+    {
+        margin-bottom: 20px;
+    }
+</style>
+
+@section scripts
+{
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script type="text/javascript">
+        const CLIENT_ID = '442811446791-2dcorh1j55srk6jld9c2ck3kppckdgvr.apps.googleusercontent.com';
+        const API_KEY = 'AIzaSyDsSjQTm_-UsRR9eDD2TzKFHhZeolI02Vg';
+        const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest';
+        const SCOPES = 'https://www.googleapis.com/auth/drive.file';
+        let tokenClient;
+        let gapiInited = false;
+        let gisInited = false;
+        function gapiLoaded() 
+{
+            gapi.load('client', initializeGapiClient);
+        }
+        async function initializeGapiClient() 
+        {
+            await gapi.client.init({
+                apiKey: API_KEY,
+                discoveryDocs: [DISCOVERY_DOC],
+            });
+            gapiInited = true;
+            maybeEnableButtons();
+        }
+
+        function gisLoaded() 
+        {
+            tokenClient = google.accounts.oauth2.initTokenClient({
+                client_id: CLIENT_ID,
+                scope: SCOPES,
+                callback: handleTokenResponse,
+            });
+            gisInited = true;
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            gapiLoaded();
+            gisLoaded();
+
+            var uploadButtons = document.querySelectorAll('.upload-to-drive-btn');
+            uploadButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    handleAuthClick(() => {
+                        var filePath = this.getAttribute('data-path');
+                        uploadFileToGoogleDrive(filePath);
+                    });
+                });
+            });
+        });
+
+        function handleAuthClick(callback) {
+            if (gapi.client.getToken() === null) {
+                tokenClient.requestAccessToken({ prompt: 'consent' });
+            } else {
+                callback();
+            }
+        }
+
+        function handleTokenResponse(resp) {
+            if (resp.error) {
+                console.error("Error during token request: ", resp.error);
+                return;
+            }
+            gapi.client.setToken({ access_token: resp.access_token });
+            alert('Entered Google Account successfully! Now you can upload files from the app to your Google Drive!');
+        }
+
+        async function uploadFileToGoogleDrive(filePath) {
+            try {
+                const fileName = filePath.substring(filePath.lastIndexOf('/') + 1);
+                const response = await fetch(filePath);
+                const fileBlob = await response.blob();
+
+                const metadata = {
+                    name: fileName,
+                    mimeType: fileBlob.type
+                };
+
+                const formData = new FormData();
+                formData.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
+                formData.append('file', fileBlob);
+
+                const uploadResponse = await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart', {
+                    method: 'POST',
+                    headers: new Headers({
+                        'Authorization': `Bearer ${gapi.client.getToken().access_token}`,
+                    }),
+                    body: formData
+                });
+
+                const result = await uploadResponse.json();
+                if (uploadResponse.ok) {
+                    alert(`File uploaded successfully! File ID: ${result.id}`);
+                } else {
+                    alert(`Error uploading file: ${result.error.message}`);
+                }
+            } catch (error) {
+                console.error("Error during file upload:", error);
+                alert("Failed to upload file.");
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var downloadButtons = document.querySelectorAll('.download-file-btn');
+
+            downloadButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var url = this.getAttribute('data-path');
+
+                    var anchor = document.createElement('a');
+                    anchor.href = url;
+                    anchor.target = '_blank';
+                    anchor.download = url.substring(url.lastIndexOf('/') + 1);
+                    document.body.appendChild(anchor);
+                    anchor.click();
+                    document.body.removeChild(anchor);
+                });
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("#articlename-autocomplete").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: '@Url.Action("GetAutocompleteData", "Articles")',
+                        data: { term: request.term },
+                        success: function (data) {
+                            console.log("Received data:", data);
+                            response($.map(data, function (item) {
+                                return {
+                                    label: item.articleName,
+                                    value: item.articleName,
+                                    articleId: item.articleId
+                                };
+                            }));
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("Error occurred:", status, error);
+                        }
+                    });
+                },
+                minLength: 3,
+                select: function (event, ui) {
+                    $("#articlename-autocomplete").data("selected-article-id", ui.item.articleId);
+                }
+            });
+
+            $("#go-to-details").on("click", function () {
+                var selectedArticleId = $("#articlename-autocomplete").data("selected-article-id");
+                if (selectedArticleId) {
+                    window.location.href = '@Url.Action("Details", "Articles")/' + selectedArticleId;
+                } else {
+                    alert("Please select an article from the dropdown.");
+                }
+            });
+        });
+    </script>
+}

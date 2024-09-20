@@ -1,0 +1,13 @@
+коди отримувачів з Одеси, яким постачають виключно 2 постачальникa з Миколаєва
+
+SELECT KO FROM О AS X WHERE місто="Одеса" AND EXISTS
+(SELECT КО 
+	FROM ОПД INNER JOIN П ON ОПД.КП=П.КП 
+	WHERE ОПД.КО=X.КО AND П.місто="Миколаїв" 
+	GROUP BY ОПД.КО 
+	HAVING COUNT (DISTINCT П.КП)=2
+) AND NOT EXISTS
+(SELECT КO
+	FROM ОПД INNER JOIN П ON ОПД.КП=П.КП 
+	WHERE ОПД.КО=X.КО AND П.місто!="Миколаїв"  
+)	

@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutForLogin.cshtml";
+}
+
+<div class="container w-75 mx-auto">
+    @if (ViewBag.UserEmail != null)
+    {
+        <div class="alert alert-success">
+            You are signed in as: @ViewBag.Username (@ViewBag.UserEmail)
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning">
+            You are not signed in.
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <div class="card shadow border-0">
+        <div class="card-header bg-secondary bg-gradient">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="text-white">Login Using Google</h2>
+                </div>
+            </div>
+        </div>
+        <div class="card-body p-2">
+            <form method="post">
+                <div class="border p-2 mt-2">
+                    <br />
+                    <div class="row text-end">
+                        <div class="col-12 text-center">
+                            <a asp-controller="Account" asp-action="Register" class="btn btn-primary mx-1">Register</a>
+                            <a asp-controller="Login" asp-action="Login" class="btn btn-primary mx-1">Sign in</a>
+                            <a asp-controller="Login" asp-action="Logout" class="btn btn-primary mx-1">Sign out</a>
+                            @if (ViewBag.UserEmail != null)
+                            {
+                                <a asp-controller="Home" asp-action="Index" class="btn btn-primary mx-1">Go to app</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

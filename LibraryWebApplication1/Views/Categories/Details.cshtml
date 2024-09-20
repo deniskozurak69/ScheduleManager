@@ -1,0 +1,61 @@
+﻿@model LibraryWebApplication1.Models.Category
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Category Details</h5>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">ID:</dt>
+            <dd class="col-sm-10">@Model.CategoryId</dd>
+
+            <dt class="col-sm-2">Name:</dt>
+            <dd class="col-sm-10">@Model.Name</dd>
+
+        </dl>
+        <hr />
+
+        @if (Model.Articles.Any())
+        {
+            <h5>Articles in this Category:</h5>
+            <ul>
+                @foreach (var article in Model.Articles)
+                {
+                    <li>
+                        <strong>@article.ArticleName</strong> - ID:@article.ArticleId - author:@article.Author.Username - publish date:@article.PublishDate
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No articles found for this category.</p>
+        }
+
+        <button class="btn btn-primary download-file-btn" data-path="@Model.Description">Download description</button>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var downloadButtons = document.querySelectorAll('.download-file-btn');
+
+                downloadButtons.forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        var url = this.getAttribute('data-path');
+
+                        var anchor = document.createElement('a');
+                        anchor.href = url;
+                        anchor.target = '_blank';
+                        anchor.download = url.substring(url.lastIndexOf('/') + 1);
+                        document.body.appendChild(anchor);
+                        anchor.click();
+                        document.body.removeChild(anchor);
+                    });
+                });
+            });
+        </script>
+        <a asp-area="" asp-controller="Categories" asp-action="Index" class="btn btn-primary">Back to List</a>
+    </div>
+</div>

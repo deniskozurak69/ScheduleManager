@@ -1,0 +1,64 @@
+﻿@model LibraryWebApplication1.Models.Article
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h4>Edit article</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ArticleId" />
+            <div class="form-group" style="display:none;">
+                <label asp-for="AuthorId" class="control-label">Author ID:</label>
+                <input asp-for="AuthorId" class="form-control" readonly />
+                <span asp-validation-for="AuthorId" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display:none;">
+                <label asp-for="Author.Username" class="control-label">Author:</label>
+                <input asp-for="Author.Username" class="form-control" readonly />
+                <span asp-validation-for="Author.Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArticleName" class="control-label">Article Name:</label>
+                <input asp-for="ArticleName" class="form-control" />
+                <span asp-validation-for="ArticleName" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display:none;">
+                <label asp-for="CategoryId" class="control-label">Category ID:</label>
+                <input asp-for="CategoryId" class="form-control" readonly />
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display:none;">
+                <label asp-for="CategoryNavigation.Name" class="control-label">Category:</label>
+                <input asp-for="CategoryNavigation.Name" class="form-control" readonly />
+                <span asp-validation-for="CategoryNavigation.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PublishDate" class="control-label">Publish Date:</label>
+                <input asp-for="PublishDate" class="form-control" type="date" />
+                <span asp-validation-for="PublishDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Text File:</label>
+                <input type="file" name="textFile" class="form-control" accept=".docx" />
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>
+
+@section Scripts 
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
