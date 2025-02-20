@@ -1,0 +1,57 @@
+﻿@if (ViewBag.LoggedUserId > 0)
+{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+@if (ViewBag.LoggedUserId < 0)
+{
+    Layout = "~/Views/Shared/_UnloggedLayout.cshtml";
+}
+
+@model LibraryWebApplication1.Models.Subject
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Model.Name details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalHours)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TotalHours)
+        </dd>
+    </dl>
+</div>
+<div>
+    <button class="btn download-file-btn" data-path="@Model.Description">Download description</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var downloadButtons = document.querySelectorAll('.download-file-btn');
+
+            downloadButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var url = this.getAttribute('data-path');
+
+                    var anchor = document.createElement('a');
+                    anchor.href = url;
+                    anchor.target = '_blank';
+                    anchor.download = url.substring(url.lastIndexOf('/') + 1);
+                    document.body.appendChild(anchor);
+                    anchor.click();
+                    document.body.removeChild(anchor);
+                });
+            });
+        });
+    </script>
+    <a asp-action="Index" class="btn btn-info">Back to list</a>
+</div>

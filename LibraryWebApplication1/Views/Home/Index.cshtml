@@ -1,11 +1,70 @@
-﻿﻿@{
-    ViewData["Title"] = "Лабораторна робота з веб-програмування";
+﻿@if (ViewBag.Name != null && ViewBag.Name != "System")
+{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
-<h1>Лабораторна робота з веб-програмування</h1>
-<h4>У цьому проекті ви зможете створювати, переглядати, редагувати та видаляти</h4>
-<h4>екземпляри трьох пов'язаних сутностей предметної області "Мережева газета"</h4>
-<h4>Щоб перейти на сторінку, що відповідає конкретній сутності, оберіть вкладку з її назвою вгорі сторінки</h4>
-<h4>Сторінки, що відповідають сутностям, містять таблиці із значеннями атрибутів наявних екземплярів</h4>
-<h4>Щоб створити новий екземпляр сутності, оберіть опцію "Create new" вгорі сторінки</h4>
-<h4>Для редагування чи видалення конкретного екземпляра оберіть опцію "Edit" чи "Delete" біля нього</h4>
-<h4>Щоб повернутись на головну сторінку, оберіть вкладку "Home" вгорі сторінки</h4>
+@if (ViewBag.Name == null)
+{
+    Layout = "~/Views/Shared/_UnloggedLayout.cshtml";
+}﻿
+
+@{
+    ViewData["Title"] = "Schedule creating app";
+}
+<h1>Schedule creating app</h1>
+<h4>This app is designed to allow creating and changing university schedules depending on preferences of teachers</h4>
+<h4>Teachers can choose when they are free for making a lecture</h4>
+<h4>An admin can view these preferences and create a schedule depending on them</h4>
+<h4>He also can check if the created schedule is suitable for teacher or if it has inconsistencies</h4>
+<div class="container w-75 mx-auto">
+    @if (ViewBag.Name != null)
+    {
+        <div class="alert alert-success">
+            You are signed in as: @ViewBag.Name @ViewBag.Surname
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning">
+            You are not signed in.
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <div class="card shadow border-0">
+        <div class="card-header bg-secondary bg-gradient">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="text-white">Manage account</h2>
+                </div>
+            </div>
+        </div>
+        <div class="card-body p-2">
+            <form method="post">
+                <div class="border p-2 mt-2">
+                    <br />
+                    <div class="row text-end">
+                        <div class="col-12 text-center">
+                            @if (ViewBag.Name == null)
+                            {
+                                <a asp-controller="Users" asp-action="Register" class="btn btn-info mx-1">Register</a>
+                                <a asp-controller="Users" asp-action="Login" class="btn btn-success mx-1">Sign in</a>
+                            }                            
+                            @if (ViewBag.Name != null)
+                            {
+                                <a asp-controller="Users" asp-action="Logout" class="btn btn-danger mx-1">Sign out</a>
+                                <!--<a asp-controller="Users" asp-action="Index" class="btn btn-primary mx-1">Go to app</a>--->
+                            }
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

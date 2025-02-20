@@ -1,0 +1,99 @@
+﻿@if (ViewBag.LoggedUserId > 0)
+{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+@if (ViewBag.LoggedUserId < 0)
+{
+    Layout = "~/Views/Shared/_UnloggedLayout.cshtml";
+}
+
+@model IEnumerable<LibraryWebApplication1.Models.Subject>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List of subjects</h1>
+
+@if (ViewBag.LoggedUserId == 0)
+{
+    <p>
+        <a asp-action="Create" class="btn btn-warning">Add new subject</a>
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalHours)
+            </th>
+            <th>
+                Description File
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            @if (item.SubjectId > 0)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalHours)
+                    </td>
+                    @if (!string.IsNullOrEmpty(item.Description))
+                    {
+                        string fileName = System.IO.Path.GetFileName(item.Description);
+                        <td>
+                            <button class="download-file-btn" data-path="@Url.Content(item.Description)">Download to PC</button>
+                        </td>
+                    }
+                    <td>
+                        @if (ViewBag.LoggedUserId == 0)
+                        {
+                            <a asp-action="Edit" asp-route-id="@item.SubjectId" class="btn btn-success">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@item.SubjectId" class="btn btn-danger">Delete</a>
+                        }
+                        <a asp-action="Details" asp-route-id="@item.SubjectId" class="btn btn-info">Details</a>
+                    </td>
+                </tr>
+            }
+}
+    </tbody>
+</table>
+@section scripts {
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var downloadButtons = document.querySelectorAll('.download-file-btn');
+
+            downloadButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var url = this.getAttribute('data-path');
+
+                    var anchor = document.createElement('a');
+                    anchor.href = url;
+                    anchor.target = '_blank';
+                    anchor.download = url.substring(url.lastIndexOf('/') + 1);
+                    document.body.appendChild(anchor);
+                    anchor.click();
+                    document.body.removeChild(anchor);
+                });
+            });
+        });
+    </script>
+
+    }

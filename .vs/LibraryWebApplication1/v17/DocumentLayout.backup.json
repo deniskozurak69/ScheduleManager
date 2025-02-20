@@ -1,0 +1,1185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\lecturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\lecturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\subjects\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\subjects\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\subjects\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\subjects\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\subjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\subjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\lectures\\configure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\lectures\\configure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\lectures\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\lectures\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\schedulepartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\schedulepartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\schedulepart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\schedulepart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\scheduleparts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\scheduleparts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\shared\\_unloggedlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\shared\\_unloggedlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\teachersubjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\teachersubjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\specialties\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\specialties\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\requests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\requests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\groupsubjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\groupsubjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\groupsubjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\groupsubjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\groups\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\groups\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\auditories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\auditories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\auditoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\auditoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\users\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\users\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\auditories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\auditories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\auditories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\auditories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\auditories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\auditories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\groups\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\groups\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\groups\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\groups\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\groups\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\groups\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\groups\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\groups\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\specialties\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\specialties\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\specialties\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\specialties\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\specialties\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\specialties\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\subjects\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\subjects\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\subjects\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\subjects\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\auditories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\auditories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\specialtiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\specialtiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\requestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\requestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\controllers\\teachersubjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\controllers\\teachersubjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\specialties\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\specialties\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\lectures\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\lectures\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\groupsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\groupsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\specialty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\specialty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\dblibrarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\dblibrarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\teachersubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\teachersubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\models\\auditory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\models\\auditory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\scheduleparts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\scheduleparts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\scheduleparts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\scheduleparts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\scheduleparts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\scheduleparts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|d:\\desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\librarywebapplication1\\views\\scheduleparts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F8A79C-B37D-48F9-B54D-6B65902218B6}|LibraryWebApplication1\\LibraryWebApplication1.csproj|solutionrelative:librarywebapplication1\\views\\scheduleparts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5da8d69b-058a-4294-a87a-f4f7ae2983b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SchedulePartsController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\SchedulePartsController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\SchedulePartsController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\SchedulePartsController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\SchedulePartsController.cs",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAIwM8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T20:45:15.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Subjects\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Subjects\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Subjects\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Subjects\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-07T14:55:03.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Subjects\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Subjects\\Edit.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Subjects\\Edit.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Subjects\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-07T14:38:46.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Subjects\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Subjects\\Create.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Subjects\\Create.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Subjects\\Create.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-07T14:37:07.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_UserLayout.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Shared\\_UserLayout.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Shared\\_UserLayout.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAADoAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T20:48:56.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Lectures\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Lectures\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Lectures\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Lectures\\Index.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAFgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T14:15:52.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LecturesController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\LecturesController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\LecturesController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\LecturesController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\LecturesController.cs",
+              "ViewState": "AgIAAGgBAAAAAAAAAAAqwHkBAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T20:45:45.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lecture.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Lecture.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\Lecture.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Lecture.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\Lecture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T21:33:48.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SchedulePart.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\SchedulePart.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\SchedulePart.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\SchedulePart.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\SchedulePart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T16:49:39.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\ScheduleParts\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\ScheduleParts\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\ScheduleParts\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\ScheduleParts\\Index.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAC0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T17:13:24.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Configure.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Lectures\\Configure.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Lectures\\Configure.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Lectures\\Configure.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Lectures\\Configure.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T16:06:31.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_UnloggedLayout.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Shared\\_UnloggedLayout.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Shared\\_UnloggedLayout.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Shared\\_UnloggedLayout.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Shared\\_UnloggedLayout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T21:02:50.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Program.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Program.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T23:13:47.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\appsettings.json",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\appsettings.json",
+              "RelativeToolTip": "LibraryWebApplication1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-06T17:25:55.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAiwJkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T15:15:13.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\TeacherSubjects\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\TeacherSubjects\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\TeacherSubjects\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\TeacherSubjects\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:26:55.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SubjectsController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\SubjectsController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\SubjectsController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\SubjectsController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\SubjectsController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T21:58:53.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Specialties\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Specialties\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Specialties\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Specialties\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABQAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T11:09:46.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GroupsController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\GroupsController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\GroupsController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\GroupsController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\GroupsController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T20:49:54.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Requests\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Requests\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Requests\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Requests\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T00:03:59.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\GroupSubjects\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\GroupSubjects\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\GroupSubjects\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\GroupSubjects\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:26:23.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GroupSubjectsController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\GroupSubjectsController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\GroupSubjectsController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\GroupSubjectsController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\GroupSubjectsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwLQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T20:11:48.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Groups\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Groups\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Groups\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Groups\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:54:57.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Courses\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Courses\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Courses\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:48:38.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Auditories\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Auditories\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Auditories\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Auditories\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:35:05.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AuditoriesController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\AuditoriesController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\AuditoriesController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\AuditoriesController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\AuditoriesController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAwwJIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T21:57:49.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Register.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Users\\Register.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Register.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Users\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T21:12:42.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Users\\Edit.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Edit.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Users\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-13T10:14:34.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Auditories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Auditories\\Edit.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Auditories\\Edit.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Auditories\\Edit.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:37:15.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Auditories\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Auditories\\Delete.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Auditories\\Delete.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Auditories\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:36:19.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Auditories\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Auditories\\Create.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Auditories\\Create.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Auditories\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:34:34.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Courses\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Courses\\Delete.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Courses\\Delete.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Courses\\Delete.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:51:54.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Courses\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Courses\\Edit.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Courses\\Edit.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Courses\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:51:40.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Courses\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Courses\\Create.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Courses\\Create.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Courses\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:51:02.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Groups\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Groups\\Edit.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Groups\\Edit.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Groups\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:58:05.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Courses\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Courses\\Details.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Courses\\Details.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Courses\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T11:21:17.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Groups\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Groups\\Details.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Groups\\Details.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Groups\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:58:20.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Groups\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Groups\\Delete.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Groups\\Delete.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Groups\\Delete.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T11:00:18.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Groups\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Groups\\Create.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Groups\\Create.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Groups\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:57:37.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T21:01:36.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Specialties\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Specialties\\Edit.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Specialties\\Edit.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Specialties\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T11:09:08.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Specialties\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Specialties\\Delete.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Specialties\\Delete.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Specialties\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T11:09:29.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Specialties\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Specialties\\Create.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Specialties\\Create.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Specialties\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T11:08:27.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Subjects\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Subjects\\Delete.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Subjects\\Delete.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Subjects\\Delete.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T23:23:13.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Subjects\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Subjects\\Details.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Subjects\\Details.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Subjects\\Details.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-07T20:59:03.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Users\\Details.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Details.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Users\\Details.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T21:11:42.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Users\\Index.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADwAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T11:54:47.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Login.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Users\\Login.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Login.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Users\\Login.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T21:12:23.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Users\\Delete.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Users\\Delete.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Users\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T23:12:04.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\User.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\User.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\User.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T22:20:44.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Auditories\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Auditories\\Details.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Auditories\\Details.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Auditories\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:36:43.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "SpecialtiesController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\SpecialtiesController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\SpecialtiesController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\SpecialtiesController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\SpecialtiesController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwJYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T20:45:56.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "RequestsController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\RequestsController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\RequestsController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\RequestsController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\RequestsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T11:05:07.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\CoursesController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwJYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T20:32:26.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T21:01:05.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:36:55.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "TeacherSubjectsController.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\TeacherSubjectsController.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Controllers\\TeacherSubjectsController.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Controllers\\TeacherSubjectsController.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Controllers\\TeacherSubjectsController.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAA7wLUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T20:14:29.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Lectures\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Lectures\\Details.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Lectures\\Details.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Lectures\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T10:36:07.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Specialties\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\Specialties\\Details.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\Specialties\\Details.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\Specialties\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T11:09:24.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Request.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Request.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\Request.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Request.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\Request.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T00:02:37.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "GroupSubject.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\GroupSubject.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\GroupSubject.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\GroupSubject.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\GroupSubject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:25:05.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Subject.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\Subject.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Subject.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\Subject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T22:07:07.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Group.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Group.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\Group.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Group.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\Group.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:22:14.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Auditory.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Auditory.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\Auditory.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Auditory.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\Auditory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T21:43:58.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Specialty.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Specialty.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\Specialty.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Specialty.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\Specialty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T20:13:47.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "TeacherSubject.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\TeacherSubject.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\TeacherSubject.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\TeacherSubject.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\TeacherSubject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T20:34:01.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\Course.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\Course.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T20:11:11.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "DblibraryContext.cs",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\DblibraryContext.cs",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Models\\DblibraryContext.cs",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Models\\DblibraryContext.cs",
+              "RelativeToolTip": "LibraryWebApplication1\\Models\\DblibraryContext.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAuwI8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T22:07:14.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\ScheduleParts\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\ScheduleParts\\Delete.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\ScheduleParts\\Delete.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\ScheduleParts\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T17:15:00.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\ScheduleParts\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\ScheduleParts\\Edit.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\ScheduleParts\\Edit.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\ScheduleParts\\Edit.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAIBJwCYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T17:15:32.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\ScheduleParts\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\ScheduleParts\\Details.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\ScheduleParts\\Details.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\ScheduleParts\\Details.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwCQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T17:15:54.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\ScheduleParts\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryWebApplication1\\Views\\ScheduleParts\\Create.cshtml",
+              "ToolTip": "D:\\Desktop copy\\\u0432\u0438\u0440\u043E\u0431\u043D\u0438\u0447\u0430 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\project v7\\LibraryWebApplication1\\Views\\ScheduleParts\\Create.cshtml",
+              "RelativeToolTip": "LibraryWebApplication1\\Views\\ScheduleParts\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T17:16:09.796Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

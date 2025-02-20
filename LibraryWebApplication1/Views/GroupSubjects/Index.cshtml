@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Group-subject Management";
+    var groups = ViewBag.Groups as List<LibraryWebApplication1.Models.Group>;
+    var subjects = ViewBag.Subjects as List<LibraryWebApplication1.Models.Subject>;
+    var groupSubjects = ViewBag.GroupSubjects as List<LibraryWebApplication1.Models.GroupSubject>;
+}
+
+<h2>Manage group and subject relations</h2>
+
+<form asp-action="Save" method="post">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Group / Subject</th>
+                @foreach (var subject in subjects)
+                {
+                    @if (subject.SubjectId > 0)
+                    {
+                        <th>@subject.Name</th>
+                    }
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var group in groups)
+            {
+                <tr>
+                    <td>@group.GroupName</td>
+                    @foreach (var subject in subjects)
+                    {
+                        @if(subject.SubjectId>0)
+                        {
+                            int checkboxValue = group.GroupId * 1000 + subject.SubjectId;
+                            bool isChecked = groupSubjects.Any(gs => gs.GroupId == group.GroupId && gs.SubjectId == subject.SubjectId);
+                            <td>
+                                <input type="checkbox" name="selectedGroupSubjects" value="@checkboxValue" @(isChecked ? "checked" : "") />
+                            </td>
+                        }
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button type="submit" class="btn btn-success">Save changes</button>
+</form>

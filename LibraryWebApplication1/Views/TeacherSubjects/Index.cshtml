@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Teacher-subject Management";
+    var teachers = ViewBag.Teachers as List<LibraryWebApplication1.Models.User>;
+    var subjects = ViewBag.Subjects as List<LibraryWebApplication1.Models.Subject>;
+    var teacherSubjects = ViewBag.TeacherSubjects as List<LibraryWebApplication1.Models.TeacherSubject>;
+}
+
+<h2>Manage teacher and subject relations</h2>
+
+<form asp-action="Save" method="post">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Teacher / Subject</th>
+                @foreach (var subject in subjects)
+                {
+                    @if (subject.SubjectId > 0)
+                    {
+                        <th>@subject.Name</th>
+                    }
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var teacher in teachers)
+            {
+                @if(teacher.UserId>0)
+                {
+                    <tr>
+                        <td>@teacher.Name @teacher.Surname</td>
+                        @foreach (var subject in subjects)
+                        {
+                            @if (subject.SubjectId > 0)
+                            {
+                                int checkboxValue = teacher.UserId * 1000 + subject.SubjectId;
+                                bool isChecked = teacherSubjects.Any(gs => gs.TeacherId == teacher.UserId && gs.SubjectId == subject.SubjectId);
+                                <td>
+                                    <input type="checkbox" name="selectedTeacherSubjects" value="@checkboxValue" @(isChecked ? "checked" : "") />
+                                </td>
+                            }
+                        }
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <button type="submit" class="btn btn-success">Save changes</button>
+</form>

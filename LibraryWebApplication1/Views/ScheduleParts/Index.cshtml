@@ -1,0 +1,136 @@
+﻿@if (ViewBag.LoggedUserId > 0)
+{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+@if (ViewBag.LoggedUserId < 0)
+{
+    Layout = "~/Views/Shared/_UnloggedLayout.cshtml";
+}
+
+@model IEnumerable<LibraryWebApplication1.Models.SchedulePart>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    .table-responsive {
+        overflow-x: auto;
+        white-space: nowrap;
+        max-width: 100%;
+    }
+
+    .table td, .table th {
+        min-width: 150px;
+    }
+</style>
+
+<h1>Current schedule</h1>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DayOfWeek)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LessonNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BeginTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EndTime)
+                </th>
+                @foreach (var group in ViewBag.Groups)
+                {
+                    <th>@group.GroupName</th>
+                    <th></th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.Lectures)
+            {
+                <tr>
+                    <td>
+                        @item.DayOfWeek
+                    </td>
+                    <td>
+                        @item.LessonNumber
+                    </td>
+                    <td>
+                        @item.BeginTime
+                    </td>
+                    <td>
+                        @item.EndTime
+                    </td>
+                    @foreach (var group in ViewBag.Groups)
+                    {
+                        var schedulePart = Model.FirstOrDefault(s => s.GroupId == group.GroupId && s.LectureId == item.LectureId);
+                        @if(schedulePart!=null)
+                        {
+                            <td>@schedulePart.TeacherSubject.Name</td>
+                            <td>@schedulePart.Auditory.AuditoryName</td>
+                        }
+                        @if (schedulePart == null)
+                        {
+                            <td></td>
+                            <td></td>
+                        }
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<form method="get" asp-action="Index">
+    <div class="form-group">
+        <label for="dayOfWeek">Day of week</label>
+        <select id="dayOfWeek" name="dayOfWeek" class="form-control">
+            <option value="All">All</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="courseId">Course</label>
+        <select id="courseId" name="courseId" class="form-control">
+            <option value="All">All</option>
+            @foreach (var course in ViewData["Courses"] as List<Course>)
+            {
+                <option value="@course.CourseId">@course.CourseName</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="specialtyId">Specialty</label>
+        <select id="specialtyId" name="specialtyId" class="form-control">
+            <option value="All">All</option>
+            @foreach (var specialty in ViewData["Specialties"] as List<Specialty>)
+            {
+                <option value="@specialty.SpecialtyId">@specialty.SpecialtyName</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="groupId">Group</label>
+        <select id="groupId" name="groupId" class="form-control">
+            <option value="All">All</option>
+            @foreach (var group in ViewData["Groups"] as List<Group>)
+            {
+                <option value="@group.GroupId">@group.GroupName</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-info" style="margin-top: 10px">Filter</button>
+</form>
+<form asp-action="DownloadSchedule" method="get" style="margin-top: 10px">
+    <button type="submit" class="btn btn-success">Download schedule</button>
+</form>

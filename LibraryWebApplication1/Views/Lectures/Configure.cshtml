@@ -1,0 +1,55 @@
+﻿@model LibraryWebApplication1.Models.Lecture
+
+@{
+    ViewData["Title"] = "Configure";
+}
+
+<h2>Change schedule structure</h2>
+
+<form asp-action="Configure" method="post">
+    <div style="margin-bottom: 10px">
+        <label for="weeks">Total weeks:</label>
+        <input type="number" name="weeks" id="weeks" min="1" required />
+    </div>
+
+    <div style="margin-bottom: 10px">
+        <label for="maxLectures">Maximum lectures per day:</label>
+        <input type="number" name="maxLectures" id="maxLectures" min="1" required />
+    </div>
+
+    <div id="lecture-times" style="margin-bottom: 5px">
+        
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<script>
+    document.getElementById("maxLectures").addEventListener("change", function () {
+        let count = this.value;
+        let container = document.getElementById("lecture-times");
+        container.innerHTML = "";
+
+        for (let i = 0; i < count; i++) {
+            let div = document.createElement("div");
+            div.innerHTML = `
+                <label>Lecture ${i + 1}:</label>
+                <input type="time" name="startTimes[${i}]" required />
+                <input type="time" name="endTimes[${i}]" required />
+            `;
+            container.appendChild(div);
+        }
+    });
+</script>

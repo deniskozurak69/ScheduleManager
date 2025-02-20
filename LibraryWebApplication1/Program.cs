@@ -16,7 +16,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using Azure.Messaging.ServiceBus;
-using LibraryWebApplication1.Services;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddMemoryCache();
@@ -37,7 +36,11 @@ builder.Services.AddAuthentication(o =>
                 o.ClientId = "755861786405-vp3j3666mmhr8l3outj8lm70jnu1bjh3.apps.googleusercontent.com";
                 o.ClientSecret = "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";
             });
-builder.Services.AddSingleton<LuceneService>();
+builder.Services.AddSingleton<ServiceBusClient>(provider =>
+{
+    string connectionString = builder.Configuration.GetConnectionString("ServiceBusConnection");
+    return new ServiceBusClient(connectionString);
+});
 builder.Services.AddLogging(config =>
 {
     config.AddConsole();
@@ -50,12 +53,7 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = services.GetRequiredService<DblibraryContext>();
-        var luceneService = services.GetRequiredService<LuceneService>();
-        luceneService.ClearIndex();
         var users = context.Users.ToList();
-        var categories = context.Categories.ToList();
-        var articles = context.Articles.ToList();
-        luceneService.AddAllToIndex(categories,articles,users);
     }
     catch (Exception ex)
     {
@@ -75,9 +73,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Login}/{action=Index}/{id?}");
-app.MapControllerRoute(
-    name: "usersMap",
-    pattern: "{controller=Users}/{action=UsersMap}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 app.Run();
 

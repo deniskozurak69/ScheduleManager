@@ -1,0 +1,33 @@
+﻿@model LibraryWebApplication1.Models.Auditory
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit auditory</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AuditoryId" />
+            <div class="form-group">
+                <label asp-for="AuditoryName" class="control-label"></label>
+                <input asp-for="AuditoryName" class="form-control" />
+                <span asp-validation-for="AuditoryName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-info">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+

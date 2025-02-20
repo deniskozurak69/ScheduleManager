@@ -28,7 +28,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap_slate.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap_state.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/LibraryWebApplication1.styles.css" asp-append-version="true" />
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
@@ -45,18 +45,39 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Users" asp-action="Index">Teachers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Login" asp-action="Index">Login</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Subjects" asp-action="Index">Subjects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Categories" asp-action="Index">Categories</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="GroupSubjects" asp-action="Index">Set subjects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Articles" asp-action="Index">Articles</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="TeacherSubjects" asp-action="Index">Set teachers</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Auditories" asp-action="Index">Rooms</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Users" asp-action="Index">Users</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Specialties" asp-action="Index">Specialties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Courses" asp-action="Index">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Groups" asp-action="Index">Student groups</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Requests" asp-action="Index">Teacher requests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Lectures" asp-action="Index">Schedule management</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="ScheduleParts" asp-action="Index">Current schedule</a>
                         </li>
                     </ul>
                 </div>
@@ -77,10 +98,10 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 
-    <div class="fixed-contact">
+    <!--<div class="fixed-contact">
         <h5>Контакти автора проекту</h5>
         <p>Пошта: deniskozurak0@gmail.com</p>
         <p>Телефон: +38(098)-640-41-69</p>
-    </div>
+    </div>-->
 </body>
 </html>

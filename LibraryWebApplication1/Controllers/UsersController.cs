@@ -7,47 +7,33 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LibraryWebApplication1.Models;
 using Microsoft.AspNetCore.Authorization;
-using LibraryWebApplication1.Services;
 using Microsoft.Extensions.Caching.Memory;
 namespace LibraryWebApplication1.Controllers
 {
     public class UsersController : Controller
     {
         private readonly DblibraryContext _context;
-        private readonly IWebHostEnvironment _webHostEnvironment;
-        //private readonly FileProcessingService _fileProcessingService;
-        private readonly IMemoryCache _memoryCache;
-        public UsersController(DblibraryContext context, IWebHostEnvironment webHostEnvironment,/* FileProcessingService fileProcessingService,*/ IMemoryCache memoryCache)
+        private readonly IWebHostEnvironment _webHostEnvironment;        
+        public UsersController(DblibraryContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
             _webHostEnvironment = webHostEnvironment;
-            //_fileProcessingService = fileProcessingService;
-            _memoryCache = memoryCache;
-        }
-        private async Task<List<User>> GetCachedUsersWithArticlesAsync()
-        {
-            string cacheKey = "users_with_articles";
-            if (!_memoryCache.TryGetValue(cacheKey, out List<User> users))
-            {
-                users = await _context.Users
-                    .Include(u => u.Articles) 
-                    .ThenInclude(a => a.CategoryNavigation)
-                    .ToListAsync();
-                var cacheOptions = new MemoryCacheEntryOptions()
-                    .SetSlidingExpiration(TimeSpan.FromMinutes(10));
-                _memoryCache.Set(cacheKey, users, cacheOptions);
-            }
-            return users;
         }
         public async Task<IActionResult> Index()
         {
-            var users = await GetCachedUsersWithArticlesAsync();
+            var loggedUser = _context.Users.SingleOrDefault(u => u.IsLogged == 1);
+            if (loggedUser != null) ViewBag.LoggedUserId = loggedUser.UserId;
+            else ViewBag.LoggedUserId = -1;
+            var users = await _context.Users
+                .OrderBy(u => u.Priority)
+                    .ToListAsync();
             return View(users);
         }
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return NotFound();
-            var users = await GetCachedUsersWithArticlesAsync();
+            var users = await _context.Users
+                    .ToListAsync();
             var user = users.FirstOrDefault(u => u.UserId == id);
             if (user == null) return NotFound();
             return View(user);
@@ -59,37 +45,15 @@ namespace LibraryWebApplication1.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId,Username,Password,Latitude,Longtitude")] User user, IFormFile photoFile, bool compressImage)
+        public async Task<IActionResult> Create([Bind("UserId,Name,Surname")] User user)
         {
-            if (photoFile != null && photoFile.Length > 0)
-            {
-                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(photoFile.FileName);
-                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads");
-                string filePath = Path.Combine(uploadsFolder, fileName);
-                using (var stream = new FileStream(filePath, FileMode.Create))
-                {
-                    await photoFile.CopyToAsync(stream);
-                }
-                user.ProfilePhoto = Path.Combine("/uploads", fileName);
-                //await _fileProcessingService.SendFileProcessingMessageAsync(filePath);
-                string newFileName = Path.Combine(Path.GetFileNameWithoutExtension(fileName) + "_compressed.jpg");
-                if (compressImage)
-                {
-                    user.ProfilePhoto = Path.Combine("/uploads", newFileName);
-                }
-            }
-            else
-            {
-                ModelState.AddModelError("ProfilePhotoFile", "Файл не додано");
-                return View(user);
-            }
             int maxUserId = _context.Users.Max(c => (int?)c.UserId) ?? 0;
             user.UserId = maxUserId + 1;
+            user.Password = "123";
+            user.IsLogged = 0;
+            user.Priority = 1;
             _context.Add(user);
             await _context.SaveChangesAsync();
-            _memoryCache.Remove("articles");
-            _memoryCache.Remove("categories_with_articles");
-            _memoryCache.Remove("users_with_articles");
             return RedirectToAction(nameof(Index));
         }
         public async Task<IActionResult> Edit(int? id)
@@ -102,36 +66,16 @@ namespace LibraryWebApplication1.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UserId,Username,Password,Latitude,Longtitude")] User user, IFormFile photoFile, bool compressImage)
-        {
+        public async Task<IActionResult> Edit(int id, [Bind("UserId,Name,Surname,Priority")] User user)
+        {            
             if (id != user.UserId)
             {
                 return NotFound();
             }
             try
             {
-                if (photoFile != null && photoFile.Length > 0)
-                {
-                    var uploadsPath = Path.Combine(_webHostEnvironment.WebRootPath, "uploads");
-                    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(photoFile.FileName);
-                    var filePath = Path.Combine(uploadsPath, fileName);
-                    using (var stream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await photoFile.CopyToAsync(stream);
-                    }
-                    user.ProfilePhoto = Path.Combine("uploads", fileName);
-                    //await _fileProcessingService.SendFileProcessingMessageAsync(filePath);
-                    string newFileName = Path.Combine(Path.GetFileNameWithoutExtension(fileName) + "_compressed.jpg");
-                    if (compressImage)
-                    {
-                        user.ProfilePhoto = Path.Combine("/uploads", newFileName);
-                    }
-                    _context.Update(user);
-                    await _context.SaveChangesAsync();
-                    _memoryCache.Remove("articles");
-                    _memoryCache.Remove("categories_with_articles");
-                    _memoryCache.Remove("users_with_articles");
-                }
+                _context.Update(user);                
+                await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -155,53 +99,112 @@ namespace LibraryWebApplication1.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var user = await _context.Users.FindAsync(id);
+            await _context.ScheduleParts.ExecuteDeleteAsync();
+            var tsToDelete = _context.TeacherSubjects.Where(a => a.TeacherId == id);
+            _context.TeacherSubjects.RemoveRange(tsToDelete);
+            var reqsToDelete = _context.Requests.Where(a => a.TeacherId == id);
+            _context.Requests.RemoveRange(reqsToDelete);
             if (user != null)
             {
-                var articlesToDelete = _context.Articles.Where(a => a.AuthorId == user.UserId);
-                _context.Articles.RemoveRange(articlesToDelete);
                 _context.Users.Remove(user);
                 await _context.SaveChangesAsync();
-                _memoryCache.Remove("articles");
-                _memoryCache.Remove("categories_with_articles");
-                _memoryCache.Remove("users_with_articles");
             }
             return RedirectToAction(nameof(Index));
-        }
-        public IActionResult GetUsersLocations()
-        {
-            var users = _context.Users
-                .Select(u => new
-                {
-                    u.UserId,
-                    u.Username,
-                    u.Latitude,
-                    u.Longtitude
-                })
-                .ToList();
-            return Json(users);
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAutocompleteData(string term)
         {
             var users = await _context.Users
-                .Where(u => u.Username.Contains(term))
-                .Select(u => new { u.UserId, u.Username })
+                .Where(u => u.Name.Contains(term))
+                .Select(u => new { u.UserId, u.Name })
                 .ToListAsync();
             foreach (var user in users)
             {
-                Console.WriteLine($"Username: {user.Username}");
+                Console.WriteLine($"Name: {user.Name}");
             }
             return Json(users);
-        }
-        public IActionResult UsersMap()
-        {
-            ViewBag.MapboxAccessToken = "pk.eyJ1IjoiZGVuaXNrb3p1cmFrIiwiYSI6ImNtMThlMXpzZTB4cnYybHNjMWp1b2F2cWkifQ.NkJPtAFCyuIrU_dys4KN6Q";
-            return View();
         }
         private bool UserExists(int id)
         {
             return _context.Users.Any(e => e.UserId == id);
+        }
+        public IActionResult Register()
+        {
+            var loggedUser = _context.Users.SingleOrDefault(u => u.IsLogged == 1);
+            if (loggedUser != null) ViewBag.LoggedUserId = loggedUser.UserId;
+            else ViewBag.LoggedUserId = -1;
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register([Bind("Name,Surname,Password")] User user)
+        {
+            
+            int maxUserId = _context.Users.Max(c => (int?)c.UserId) ?? 0;
+            user.UserId = maxUserId + 1;
+            user.IsLogged = 0;
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Login");
+            return View(user);
+        }
+
+        public IActionResult Login()
+        {
+            var loggedUser = _context.Users.SingleOrDefault(u => u.IsLogged == 1);
+            if (loggedUser != null) ViewBag.LoggedUserId = loggedUser.UserId;
+            else ViewBag.LoggedUserId = -1;
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(string name, string surname, string password)
+        {
+            
+            var user = _context.Users.FirstOrDefault(u => u.Name == name && u.Surname == surname && u.Password == password);
+            if (user != null)
+            {
+                foreach (var u in _context.Users)
+                {
+                    u.IsLogged = 0;
+                    _context.Update(u);
+                }
+                user.IsLogged = 1;
+                _context.Update(user);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "Home");
+            }
+            ModelState.AddModelError(string.Empty, "Невірне ім'я, прізвище або пароль");
+            return View();
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            var user = _context.Users.FirstOrDefault(u => u.IsLogged == 1);
+            if (user != null)
+            {
+                user.IsLogged = 0;
+                _context.Update(user);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdatePriority(int UserId, int Priority)
+        {
+            var user = await _context.Users.FindAsync(UserId);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            user.Priority = Priority;
+            _context.Update(user);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
         }
     }
 }

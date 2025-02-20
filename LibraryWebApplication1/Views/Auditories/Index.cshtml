@@ -1,0 +1,53 @@
+﻿@if (ViewBag.LoggedUserId > 0)
+{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+@if (ViewBag.LoggedUserId < 0)
+{
+    Layout = "~/Views/Shared/_UnloggedLayout.cshtml";
+}
+
+@model IEnumerable<LibraryWebApplication1.Models.Auditory>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Auditories</h1>
+
+@if (ViewBag.LoggedUserId == 0)
+{
+    <p>
+        <a asp-action="Create" class="btn btn-warning">Add auditory</a>
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AuditoryName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            @if (item.AuditoryId > 0)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AuditoryName)
+                    </td>
+                    <td>
+                        @if (ViewBag.LoggedUserId == 0)
+                        {
+                            <a asp-action="Edit" asp-route-id="@item.AuditoryId" class="btn btn-success">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@item.AuditoryId" class="btn btn-danger">Delete</a>
+                        }
+                    </td>
+                </tr>
+            }
+}
+    </tbody>
+</table>

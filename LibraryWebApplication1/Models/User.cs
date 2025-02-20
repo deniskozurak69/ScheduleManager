@@ -9,19 +9,15 @@ namespace LibraryWebApplication1.Models
         public int UserId { get; set; }
 
         [Required(ErrorMessage = "Поле не повинно бути порожнім")]
-        public string? Username { get; set; }
+        public string? Name { get; set; }
 
         [Required(ErrorMessage = "Поле не повинно бути порожнім")]
+        public string? Surname { get; set; }
         public string? Password { get; set; }
-
-        [Required(ErrorMessage = "Файл не додано")]
-        public string? ProfilePhoto { get; set; }
-
-        [Required(ErrorMessage = "Поле не повинно бути порожнім")]
-        public double Latitude { get; set; }
-
-        [Required(ErrorMessage = "Поле не повинно бути порожнім")]
-        public double Longtitude { get; set; }
-        public virtual ICollection<Article>? Articles { get; set; } = new List<Article>();
+        public int IsLogged { get; set; }
+        public int Priority { get; set; }
+        public virtual ICollection<Subject>? Subjects { get; set; } = new List<Subject>();
+        public virtual ICollection<Request>? Requests { get; set; } = new List<Request>();
+        public virtual ICollection<TeacherSubject>? TeacherSubjects { get; set; } = new List<TeacherSubject>();
     }
 }

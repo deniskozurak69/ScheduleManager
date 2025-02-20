@@ -1,0 +1,50 @@
+﻿@if (ViewBag.LoggedUserId > 0)
+{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+@if (ViewBag.LoggedUserId < 0)
+{
+    Layout = "~/Views/Shared/_UnloggedLayout.cshtml";
+}
+
+@model IEnumerable<LibraryWebApplication1.Models.Course>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Courses</h1>
+
+@if (ViewBag.LoggedUserId == 0)
+{
+    <p>
+        <a asp-action="Create" class="btn btn-warning">Add course</a>
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseName)
+            </td>
+            <td>
+                    @if (ViewBag.LoggedUserId == 0)
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.CourseId" class="btn btn-success">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.CourseId" class="btn btn-danger">Delete</a>
+                    }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

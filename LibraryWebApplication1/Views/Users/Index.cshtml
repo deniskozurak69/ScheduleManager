@@ -1,64 +1,67 @@
-﻿@using LibraryWebApplication1.Models
+﻿@if (ViewBag.LoggedUserId > 0)
+{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+@if (ViewBag.LoggedUserId < 0)
+{
+    Layout = "~/Views/Shared/_UnloggedLayout.cshtml";
+}
+
+@using LibraryWebApplication1.Models
 @model IEnumerable<User>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Manage Users</h1>
+<h1>Registered teachers ordered by priority:</h1>
 
-<p>
-    <a asp-action="Create">Create New User</a>
-</p>
-<p>
-    <a asp-action="UsersMap">Locations of users</a>
-</p>
 <div class="search-container">
-    <label for="username-autocomplete">Search User:</label>
+    <label for="username-autocomplete">Search teacher:</label>
     <input type="text" id="username-autocomplete" />
-    <button id="go-to-details" class="btn btn-primary">View</button>
+    <button id="go-to-details" class="btn btn-warning">View</button>
 </div>
 <table class="table">
     <thead>
         <tr>
-            <th>@Html.DisplayNameFor(model => model.UserId)</th>
-            <th>@Html.DisplayNameFor(model => model.Username)</th>
-            <th>@Html.DisplayNameFor(model => model.Password)</th>
-            <th>@Html.DisplayNameFor(model => model.Latitude)</th>
-            <th>@Html.DisplayNameFor(model => model.Longtitude)</th>
-            <th class="profile-photo-header">Profile Photo</th>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Surname)</th>
+            <th>@Html.DisplayNameFor(model => model.Priority)</th>
+            @if (ViewBag.LoggedUserId == 0)
+            {
+                <th>Update priority</th>
+            }            
             <th></th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>@Html.DisplayFor(modelItem => item.UserId)</td>
-                <td>@Html.DisplayFor(modelItem => item.Username)</td>
-                <td>@Html.DisplayFor(modelItem => item.Password)</td>
-                <td>@Html.DisplayFor(modelItem => item.Latitude)</td>
-                <td>@Html.DisplayFor(modelItem => item.Longtitude)</td>
-                <td>
-                    @if (!string.IsNullOrEmpty(item.ProfilePhoto))
+            @if(item.UserId>0)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Surname)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Priority)</td>
+                    @if (ViewBag.LoggedUserId == 0)
                     {
-                        string fileName = System.IO.Path.GetFileName(item.ProfilePhoto);
-                        <div class="button-container">
-                            <button class="download-file-btn" data-path="@Url.Content(item.ProfilePhoto)">Download to PC</button>
-                            <button class="upload-to-drive-btn" data-path="@Url.Content(item.ProfilePhoto)">Upload to Google Drive</button>
-                        </div>
+                        <td>
+                            <form asp-action="UpdatePriority" method="post" style="display:flex; gap:5px;">
+                                <input type="hidden" name="UserId" value="@item.UserId" />
+                                <input type="number" name="Priority" class="form-control" style="width: 80px;" min="0" required />
+                                <button type="submit" class="btn btn-success btn-sm">Save</button>
+                            </form>
+                        </td>
                     }
-                    else
-                    {
-                        <span>No profile photo uploaded</span>
-                    }
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.UserId">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@item.UserId">Delete</a> |
-                    <a asp-action="Details" asp-route-id="@item.UserId">Details</a>
-                </td>
-            </tr>
+                    <td>
+                        @if (ViewBag.LoggedUserId == 0)
+                        {
+                            <a asp-action="Delete" asp-route-id="@item.UserId" class="btn btn-danger">Delete</a>
+                        }
+                        <a asp-action="Details" asp-route-id="@item.UserId" class="btn btn-info">Details</a>
+                    </td>
+                </tr>
+            }
         }
     </tbody>
 </table>
@@ -110,106 +113,6 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-    <script type="text/javascript">
-        const CLIENT_ID = '442811446791-2dcorh1j55srk6jld9c2ck3kppckdgvr.apps.googleusercontent.com';
-        const API_KEY = 'AIzaSyDsSjQTm_-UsRR9eDD2TzKFHhZeolI02Vg';
-        const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest';
-        const SCOPES = 'https://www.googleapis.com/auth/drive.file';
-
-        let tokenClient;
-        let gapiInited = false;
-        let gisInited = false;
-
-        function gapiLoaded() {
-            gapi.load('client', initializeGapiClient);
-        }
-
-        async function initializeGapiClient() {
-            await gapi.client.init({
-                apiKey: API_KEY,
-                discoveryDocs: [DISCOVERY_DOC],
-            });
-            gapiInited = true;
-            maybeEnableButtons();
-        }
-
-        function gisLoaded() {
-            tokenClient = google.accounts.oauth2.initTokenClient({
-                client_id: CLIENT_ID,
-                scope: SCOPES,
-                callback: handleTokenResponse,
-            });
-            gisInited = true;
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            gapiLoaded();
-            gisLoaded();
-
-            var uploadButtons = document.querySelectorAll('.upload-to-drive-btn');
-            uploadButtons.forEach(function (button) {
-                button.addEventListener('click', function () {
-                    handleAuthClick(() => {
-                        var filePath = this.getAttribute('data-path');
-                        uploadFileToGoogleDrive(filePath);
-                    });
-                });
-            });
-        });
-
-        function handleAuthClick(callback) {
-            if (gapi.client.getToken() === null) {
-                tokenClient.requestAccessToken({ prompt: 'consent' });
-            } else {
-                callback();
-            }
-        }
-
-        function handleTokenResponse(resp) {
-            if (resp.error) {
-                console.error("Error during token request: ", resp.error);
-                return;
-            }
-            gapi.client.setToken({ access_token: resp.access_token });
-            alert('Entered Google Account successfully! Now you can upload files from the app to your Google Drive!');
-        }
-
-        async function uploadFileToGoogleDrive(filePath) {
-            try {
-                const fileName = filePath.substring(filePath.lastIndexOf('/') + 1);
-                const response = await fetch(filePath);
-                const fileBlob = await response.blob();
-
-                const metadata = {
-                    name: fileName,
-                    mimeType: fileBlob.type
-                };
-
-                const formData = new FormData();
-                formData.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
-                formData.append('file', fileBlob);
-
-                const uploadResponse = await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart', {
-                    method: 'POST',
-                    headers: new Headers({
-                        'Authorization': `Bearer ${gapi.client.getToken().access_token}`,
-                    }),
-                    body: formData
-                });
-
-                const result = await uploadResponse.json();
-                if (uploadResponse.ok) {
-                    alert(`File uploaded successfully! File ID: ${result.id}`);
-                } else {
-                    alert(`Error uploading file: ${result.error.message}`);
-                }
-            } catch (error) {
-                console.error("Error during file upload:", error);
-                alert("Failed to upload file.");
-            }
-        }
-    </script>
     
 
     <script type="text/javascript">
@@ -243,8 +146,8 @@
                         success: function (data) {
                             response($.map(data, function (item) {
                                 return {
-                                    label: item.username,
-                                    value: item.username,
+                                    label: item.name,
+                                    value: item.name,
                                     userId: item.userId
                                 };
                             }));

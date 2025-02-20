@@ -1,0 +1,26 @@
+﻿@model IEnumerable<LibraryWebApplication1.Models.Request>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Teacher preferences</h1>
+
+@{
+    var groupedRequests = Model
+        .Where(r => r.Teacher != null && r.Teacher.UserId > 0)
+        .GroupBy(r => r.Teacher);
+}
+@foreach (var group in groupedRequests)
+{
+    <h3>The teacher @group.Key.Name @group.Key.Surname prefers to make lectures in:</h3>
+    <ul>
+        @foreach (var req in group)
+        {
+            if (req.Lecture != null)
+            {
+                <li>Day: @req.Lecture.DayOfWeek, Lesson: @req.Lecture.LessonNumber</li>
+            }
+        }
+    </ul>
+}
